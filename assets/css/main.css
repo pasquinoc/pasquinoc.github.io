@@ -98,6 +98,33 @@ input, select, textarea {
     opacity: 1;
 }
 
+#navbarul2 {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: .5em;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#navbarul2 li {
+    float: left;
+    width: 5em;
+    height: 1em;
+    opacity: .8;
+    line-height: 1em;
+    text-align: center;
+    font-size: 1em;
+}
+#navbarul2 li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+#navbarul2 li a:hover {
+    background-color: black;
+    opacity: 1;
+}
+
 /* Basic */
 
 	/*
