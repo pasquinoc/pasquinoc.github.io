@@ -7,7 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
+html, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
@@ -70,6 +70,32 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+
+#navbarul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#navbarul li {
+    float: left;
+    width: 5em;
+    height: 2em;
+    opacity: .8;
+    line-height: 2em;
+    text-align: center;
+    font-size: 1.25em;
+}
+#navbarul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+#navbarul li a:hover {
+    background-color: black;
+    opacity: 1;
 }
 
 /* Basic */
@@ -1082,6 +1108,7 @@ input, select, textarea {
 		width: calc(100% - 22.5em);
 		height: 100%;
 		left: 0;
+        z-index: -1;
 	}
 
 		#viewer .inner {
@@ -1115,7 +1142,7 @@ input, select, textarea {
 			#viewer .inner .toggle {
 				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 				position: absolute;
-				top: 0;
+				top: 4em;
 				width: 4em;
 				height: 4em;
 				background-image: url("images/close.svg");
@@ -1231,6 +1258,7 @@ input, select, textarea {
 
 			#viewer .slide.active .image {
 				opacity: 1;
+                margin-top: 0em;
 			}
 
 		body.fullscreen #viewer {
